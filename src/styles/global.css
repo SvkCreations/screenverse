@@ -1,0 +1,23 @@
+:root {
+  --bg: #080808;
+  --surface: #111111;
+  --gold: #D4AF37;
+  --champagne: #F3D77A;
+  --text: #ffffff;
+  --muted: #9a9a9a;
+  --border: rgba(212, 175, 55, 0.18);
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --gutter: 48px;
+  --card-w: 190px;
+}
+@media (max-width: 1000px) { :root { --gutter: 28px; --card-w: 160px; } }
+@media (max-width: 600px)  { :root { --gutter: 16px; --card-w: 132px; } }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); font-family: var(--font-body); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+::selection { background: var(--gold); color: #111; }

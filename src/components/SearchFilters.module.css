@@ -1,0 +1,11 @@
+.bar { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center; margin: 22px 0 8px; }
+.pills { display: flex; gap: 6px; padding: 4px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); }
+.pill { border: 0; background: none; color: #bbb; padding: 7px 16px; border-radius: 999px; cursor: pointer; font-size: 14px; }
+.pill:hover { color: #fff; }
+.on { background: linear-gradient(135deg, var(--champagne), var(--gold)); color: #111; font-weight: 600; }
+.bar select, .year {
+  height: 40px; padding: 0 12px; border-radius: 10px; background: var(--surface); color: #ddd;
+  border: 1px solid var(--border); font-size: 14px; outline: none;
+}
+.year { width: 86px; }
+.bar select:focus, .year:focus { border-color: rgba(212,175,55,.6); }

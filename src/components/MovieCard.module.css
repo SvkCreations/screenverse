@@ -1,0 +1,43 @@
+.card { flex: 0 0 auto; width: var(--card-w); scroll-snap-align: start; display: block; }
+.poster {
+  position: relative; aspect-ratio: 2 / 3; border-radius: 10px; overflow: hidden;
+  background: var(--surface); border: 1px solid var(--border);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.card:hover .poster, .card:focus-visible .poster {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 18px 40px rgba(0,0,0,.7), 0 0 0 1px rgba(212,175,55,.45);
+  border-color: rgba(212,175,55,.5);
+}
+.poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.fallback {
+  height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;
+  padding: 16px; font-family: var(--font-display); color: var(--champagne);
+  background: linear-gradient(160deg, #1a1608, #0d0d0d);
+}
+.rating {
+  position: absolute; left: 8px; bottom: 8px; display: inline-flex; align-items: center; gap: 4px;
+  padding: 3px 8px; border-radius: 999px; font-size: 12px; font-weight: 600;
+  background: rgba(8,8,8,.82); color: var(--champagne); border: 1px solid var(--border);
+}
+.save {
+  position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center; cursor: pointer; color: #fff;
+  background: rgba(8,8,8,.7); border: 1px solid var(--border);
+  opacity: 0; transition: opacity .2s ease, color .2s ease;
+}
+.card:hover .save, .save:focus-visible, .saved { opacity: 1; }
+.saved { color: var(--gold); }
+.meta { padding: 10px 2px 0; display: flex; flex-direction: column; gap: 2px; }
+.title { font-size: 14px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sub { font-size: 12px; color: var(--muted); }
+@media (hover: none) { .save { opacity: 1; } }
+.preview {
+  position: absolute; top: 8px; left: 8px; width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center; cursor: pointer; color: #fff;
+  background: rgba(8,8,8,.7); border: 1px solid var(--border);
+  opacity: 0; transition: opacity .2s ease, color .2s ease;
+}
+.card:hover .preview, .preview:focus-visible { opacity: 1; }
+.preview:hover { color: var(--gold); }
+@media (hover: none) { .preview { opacity: 1; } }

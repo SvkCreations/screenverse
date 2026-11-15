@@ -1,0 +1,4 @@
+.footer { margin-top: 60px; padding: 40px var(--gutter); border-top: 1px solid var(--border); color: var(--muted); display: grid; gap: 8px; }
+.logo { font-family: var(--font-display); font-weight: 700; letter-spacing: .08em; color: #fff; }
+.logo span { color: var(--gold); }
+.small { font-size: 12px; max-width: 640px; }

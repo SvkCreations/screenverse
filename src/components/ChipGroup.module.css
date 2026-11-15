@@ -1,0 +1,10 @@
+.group { border: 0; margin-bottom: 26px; }
+.group legend { font-family: var(--font-display); font-size: 19px; margin-bottom: 12px; }
+.group small { font-family: var(--font-body); font-size: 12px; color: var(--muted); margin-left: 6px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  padding: 8px 16px; border-radius: 999px; font-size: 14px; cursor: pointer; color: #ccc;
+  background: var(--surface); border: 1px solid var(--border); transition: all .2s ease;
+}
+.chip:hover { color: #fff; border-color: rgba(212,175,55,.5); }
+.on { background: linear-gradient(135deg, var(--champagne), var(--gold)); color: #111; border-color: transparent; font-weight: 600; }

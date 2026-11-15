@@ -1,0 +1,19 @@
+.page { padding: 110px var(--gutter) 40px; min-height: 80vh; }
+.head h1 { font-family: var(--font-display); font-size: clamp(28px, 4vw, 44px); }
+.head p { color: var(--muted); margin-top: 6px; max-width: 620px; line-height: 1.6; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 24px 0 14px; }
+.pills { display: flex; gap: 6px; padding: 4px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); }
+.pills button { border: 0; background: none; color: #bbb; padding: 7px 16px; border-radius: 999px; cursor: pointer; font-size: 14px; }
+.pills button:hover { color: #fff; }
+.pills .on { background: linear-gradient(135deg, var(--champagne), var(--gold)); color: #111; font-weight: 600; }
+.controls select { height: 40px; padding: 0 12px; border-radius: 10px; background: var(--surface); color: #ddd; border: 1px solid var(--border); font-size: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.chips button { padding: 6px 14px; border-radius: 999px; font-size: 13px; cursor: pointer; color: #ccc; background: var(--surface); border: 1px solid var(--border); }
+.chips button:hover { color: #fff; border-color: rgba(212,175,55,.5); }
+.chips .chipOn { background: rgba(212,175,55,.16); color: var(--champagne); border-color: rgba(212,175,55,.6); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--card-w), 1fr)); gap: 22px 14px; }
+.grid > * { width: 100%; }
+.error { color: #f0b4b4; padding: 14px 0; }
+.empty { color: var(--muted); text-align: center; margin: 50px 0; }
+.empty a, .note a { color: var(--champagne); }
+.note { color: var(--muted); font-size: 12px; margin-top: 34px; }

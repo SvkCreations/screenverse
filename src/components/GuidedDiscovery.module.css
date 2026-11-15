@@ -1,0 +1,18 @@
+.row { display: flex; flex-wrap: wrap; gap: 0 48px; }
+.cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 6px; }
+.cta > button:first-child {
+  display: inline-flex; align-items: center; gap: 8px; padding: 14px 30px; border-radius: 10px; border: 0;
+  font-size: 16px; font-weight: 600; color: #111; cursor: pointer; background: linear-gradient(135deg, var(--champagne), var(--gold));
+  transition: transform .2s ease, filter .2s ease;
+}
+.cta > button:first-child:hover:not(:disabled) { transform: translateY(-2px); filter: brightness(1.08); }
+.cta > button:first-child:disabled { opacity: .45; cursor: default; }
+.cta span { color: var(--muted); font-size: 13px; }
+.reset { background: none; border: 0; color: var(--muted); cursor: pointer; font-size: 14px; }
+.reset:hover { color: #fff; }
+.error { margin-top: 24px; padding: 14px 16px; border-radius: 10px; color: #f0b4b4; background: rgba(200,60,60,.08); border: 1px solid rgba(200,60,60,.3); }
+.save { margin-top: 14px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.save a { color: var(--champagne); }
+.save button { padding: 8px 16px; border-radius: 8px; cursor: pointer; color: #fff; background: var(--surface); border: 1px solid var(--border); }
+.save button:hover:not(:disabled) { border-color: var(--gold); }
+.save button:disabled { opacity: .5; cursor: default; }

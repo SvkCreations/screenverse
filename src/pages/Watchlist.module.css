@@ -1,0 +1,8 @@
+.page { padding: 110px var(--gutter) 40px; min-height: 80vh; }
+.page h1 { font-family: var(--font-display); margin-bottom: 8px; }
+.note { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+.note a, .empty a { color: var(--champagne); }
+.error { color: #f0b4b4; margin-bottom: 16px; }
+.empty { display: grid; justify-items: center; gap: 12px; color: var(--muted); text-align: center; margin-top: 70px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--card-w), 1fr)); gap: 22px 14px; margin-top: 22px; }
+.grid > * { width: 100%; }
