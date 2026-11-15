@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav className={`${styles.nav} ${scrolled || open ? styles.solid : ''}`}>
-      <Link to="/screenverse" className={styles.logo} onClick={() => setOpen(false)}>
+      <Link to="/" className={styles.logo} onClick={() => setOpen(false)}>
         SCREEN<span>VAULT</span>
       </Link>
 
